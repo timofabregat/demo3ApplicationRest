@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/demo3_comunes" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../Gradle/gradle-7.2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/demo3_comunes" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/demo3_comunes" name="demo3_comunes">
+                <projects>
+                  <project path="$PROJECT_DIR$/demo3_comunes" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/demo3_igu" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../Gradle/gradle-7.2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/demo3_comunes" />
+            <option value="$PROJECT_DIR$/demo3_igu" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/demo3_comunes" name="demo3_comunes">
+                <projects>
+                  <project path="$PROJECT_DIR$/demo3_comunes" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/demo3_servidor" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../Gradle/gradle-7.2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/demo3_comunes" />
+            <option value="$PROJECT_DIR$/demo3_servidor" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

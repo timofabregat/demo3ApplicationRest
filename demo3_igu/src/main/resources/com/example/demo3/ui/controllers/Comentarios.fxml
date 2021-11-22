@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneComentarios" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ui.controllers.ComentariosController">
+   <children>
+      <Text layoutX="28.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calificar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="puntosChoiceBox" layoutX="28.0" layoutY="85.0" prefHeight="26.0" prefWidth="52.0" />
+      <Text layoutX="110.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar comentario">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="comentField" layoutX="108.0" layoutY="85.0" prefHeight="79.0" prefWidth="388.0" promptText="Máximo 200 caracteres" />
+      <Button layoutX="517.0" layoutY="112.0" mnemonicParsing="false" onAction="#comentar" text="Enviar" />
+      <Button layoutX="28.0" layoutY="137.0" mnemonicParsing="false" onAction="#calificar" prefHeight="26.0" prefWidth="52.0" text="Enviar" />
+      <Text layoutX="110.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ver comentarios">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Atrás" />
+      <Label fx:id="usernamelabel" layoutX="110.0" layoutY="209.0" prefHeight="18.0" prefWidth="179.0" text="username" />
+      <Label fx:id="datelabel" alignment="CENTER_RIGHT" layoutX="306.0" layoutY="210.0" prefHeight="17.0" prefWidth="179.0" text="fecha" />
+      <Label fx:id="commentlabel" alignment="TOP_LEFT" layoutX="110.0" layoutY="238.0" prefHeight="92.0" prefWidth="388.0" text="Label" />
+      <Button layoutX="366.0" layoutY="343.0" mnemonicParsing="false" onAction="#siguientecomentario" text="Siguiente comentario" />
+      <Label fx:id="numComlabel" layoutX="509.0" layoutY="313.0" prefHeight="17.0" prefWidth="69.0" text="num" />
+   </children>
+</AnchorPane>

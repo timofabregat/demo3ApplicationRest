@@ -1,0 +1,4 @@
+rootProject.name = 'demo3_servidor'
+
+includeBuild '../demo3_comunes'
+

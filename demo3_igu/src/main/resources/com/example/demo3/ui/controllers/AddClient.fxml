@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cliente_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ui.controllers.ClienteController">
+   <children>
+      <Label layoutX="169.0" layoutY="52.0" text="Mail:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="85.0" text="Contraseña:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mail_field" layoutX="210.0" layoutY="48.0" prefHeight="26.0" prefWidth="207.0" />
+      <Button fx:id="siguiente_button" layoutX="487.0" layoutY="348.0" mnemonicParsing="false" onAction="#addClient" prefHeight="38.0" prefWidth="84.0" text="Siguiente" />
+      <Label layoutX="80.0" layoutY="150.0" text="Nro. de documento:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="document_field" layoutX="210.0" layoutY="146.0" prefHeight="26.0" prefWidth="207.0" />
+      <ChoiceBox fx:id="pais_choicebox" layoutX="210.0" layoutY="190.0" prefHeight="26.0" prefWidth="206.0" />
+      <ChoiceBox fx:id="document_choicebox" layoutX="210.0" layoutY="114.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="78.0" layoutY="118.0" text="Tipo de documento:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="194.0" text="País:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="173.0" text="Ingrese su documento sin puntos ni guiones.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="227.0" text="Fecha de nacimiento:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date_picker" layoutX="210.0" layoutY="224.0" prefHeight="26.0" prefWidth="205.0" />
+      <CheckBox fx:id="vacuna_check" layoutX="204.0" layoutY="367.0" mnemonicParsing="false" text="Estoy vacunado contra COVID-19" />
+      <Button fx:id="atrasButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Atrás" />
+      <PasswordField fx:id="password_field" layoutX="210.0" layoutY="82.0" prefHeight="26.0" prefWidth="208.0" />
+      <ImageView fx:id="perfil_image" fitHeight="69.0" fitWidth="205.0" layoutX="210.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="seleccionar_button" layoutX="210.0" layoutY="254.0" mnemonicParsing="false" onAction="#seleccionarImagen" prefHeight="25.0" prefWidth="205.0" text="Seleccionar Imagen" />
+   </children>
+</AnchorPane>

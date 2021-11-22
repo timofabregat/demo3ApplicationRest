@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="act_view_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ui.controllers.ActividadViewController">
+   <children>
+      <Button fx:id="atras_button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Atrás" />
+      <Label fx:id="label_nombre_actividad" layoutX="77.0" layoutY="11.0" prefHeight="33.0" prefWidth="490.0" text="Nombre actividad">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label fx:id="descripcion" alignment="TOP_LEFT" layoutX="157.0" layoutY="293.0" prefHeight="96.0" prefWidth="387.0" text="descripcion" />
+      <Text layoutX="412.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horario" />
+      <Text layoutX="67.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción" />
+      <Label fx:id="horario" layoutX="477.0" layoutY="90.0" prefHeight="17.0" prefWidth="113.0" text="horario" />
+      <Text layoutX="364.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admite reservas" />
+      <Text layoutX="400.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operador" />
+      <Label fx:id="admite_reservas" layoutX="477.0" layoutY="113.0" text="admitereservas" />
+      <Label fx:id="operador_actividad" layoutX="477.0" layoutY="135.0" text="operador" />
+      <ImageView fx:id="imageView_actividad" fitHeight="211.0" fitWidth="324.0" layoutX="21.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="391.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuación" />
+      <Label fx:id="puntuacion_label" layoutX="477.0" layoutY="157.0" text="punt" />
+      <Button layoutX="383.0" layoutY="196.0" mnemonicParsing="false" onAction="#realizarComentario" prefHeight="26.0" prefWidth="160.0" text="Ver o realizar comentarios" />
+      <Button layoutX="383.0" layoutY="235.0" mnemonicParsing="false" onAction="#reservar" prefHeight="26.0" prefWidth="160.0" text="Reservar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane_intereses" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ui.controllers.EditarInteresesClienteController">
+   <children>
+      <Text layoutX="235.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editar Intereses">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <ChoiceBox fx:id="interesChoiceBox" layoutX="58.0" layoutY="127.0" prefHeight="26.0" prefWidth="217.0" />
+      <Button fx:id="agregarButton" layoutX="58.0" layoutY="169.0" mnemonicParsing="false" onAction="#agregarPreferencia" prefHeight="26.0" prefWidth="106.0" text="Agregar interés" />
+      <TableView fx:id="tablaIntereses" layoutX="339.0" layoutY="78.0" prefHeight="248.0" prefWidth="193.0">
+        <columns>
+          <TableColumn fx:id="interesesColumn" prefWidth="198.0" text="Intereses actuales" />
+        </columns>
+      </TableView>
+      <Button fx:id="finalizarButton" layoutX="462.0" layoutY="360.0" mnemonicParsing="false" onAction="#updateIntereses" text="Actualizar intereses" />
+      <Button fx:id="eliminarButton" layoutX="169.0" layoutY="169.0" mnemonicParsing="false" onAction="#eliminarInteres" prefHeight="26.0" prefWidth="106.0" text="Eliminar interés" />
+      <Text layoutX="107.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestione sus intereses" />
+   </children>
+</AnchorPane>

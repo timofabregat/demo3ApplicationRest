@@ -1,0 +1,10 @@
+# Project exclude paths
+/demo3_comunes/.gradle/
+/demo3_comunes/build/
+/demo3_comunes/build/classes/java/main/
+/demo3_igu/.gradle/
+/demo3_igu/build/
+/demo3_igu/build/classes/java/main/
+/demo3_servidor/.gradle/
+/demo3_servidor/build/
+/demo3_servidor/build/classes/java/main/
